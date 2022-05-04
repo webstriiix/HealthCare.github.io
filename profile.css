@@ -1,0 +1,140 @@
+/* profile */
+.profile-user{
+    padding: 20px 0px 20px 0px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    justify-content: center;
+}
+
+.profile-user img{
+    width: 50px;
+    background-color: gray;
+    border-radius: 100%;
+    justify-self: center;
+}
+.badge{
+    margin-left:50px ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+.badge i {
+    font-size: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(266deg, rgba(2,0,36,1) 0%, rgba(63,197,240,1) 12%, rgba(109,236,185,1) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    display: flex;
+}
+.hr{
+    width: 80%; 
+    margin: 0px 0px 0px 30px;
+}
+.badge i p{
+    font-size: 10px;
+    margin: 5px 0px 0px 5px;
+    background: gray;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* sertificate */
+
+.badge-item{
+    margin-top: 30px;
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.badge-item .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.badge-item i{
+    font-size: 100px;
+    background: rgb(2,0,36);
+    background: linear-gradient(266deg, rgba(2,0,36,1) 0%, rgba(63,197,240,1) 12%, rgba(109,236,185,1) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px; 
+}
+/* Friend list */
+.friend-list{
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    min-height: 500px;
+    overflow-x: hidden;
+    padding: 50px;
+}
+
+.friend-list a{
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    border-radius: 10px;
+    display: none;
+}
+
+.friend-list a:hover{
+    background-color: black;
+    color: white;
+}
+
+.friend-list .friend{
+    margin-top: 10px;
+}
+
+.loggin{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.loggin a{
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.loggin a:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 1000px) { 
+
+    .profile-user{
+        margin-top: 50px;
+    }
+    .friend-list{
+        height: 500px;
+    }
+    .friend-list a{
+        margin-bottom: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    .loggin{
+        display: none;
+    }
+}
